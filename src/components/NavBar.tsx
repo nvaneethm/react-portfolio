@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/NavBar.module.css'; // Assuming you use CSS Modules for styling
+import styles from './NavBar.module.css'; // Assuming you use CSS Modules for styling
 
 const NavBar = () => {
     return (
