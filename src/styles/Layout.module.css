@@ -1,0 +1,6 @@
+.container {
+    max-width: 1200px; /* Fixed width */
+    margin: 0 auto; /* Centering */
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
