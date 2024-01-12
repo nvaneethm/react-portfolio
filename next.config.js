@@ -17,7 +17,7 @@ module.exports = {
     // Next.js Image and CSS Configuration
     images: {
         loader: 'imgix', // or any other valid loader
-        path: isProd ? `https://nvaneethm.github.io/${repoName}/` : '',
+        path: isProd ? `https://nvaneethm.github.io/${repoName}/blob/gh-pages/` : '',
     },
 
     // Custom Webpack config
