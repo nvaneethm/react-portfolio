@@ -1,32 +1,45 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const isProd = process.env.NODE_ENV === 'production';
+
+const repoName = 'react-portfolio'; // Replace with your actual repo name if different.
 
 module.exports = {
     // Asset Prefix
-    assetPrefix: isProd ? '/react-portfolio/' : '',
-
-    // Output Configuration
+    assetPrefix: isProd ? `/${repoName}/` : '',
     output: 'export',
 
     // For routing with GitHub Pages
-    basePath: isProd ? '/react-portfolio' : '',
+    basePath: isProd ? `/${repoName}` : '',
     trailingSlash: true,
 
     // Next.js Image and CSS Configuration
     images: {
-        loader: 'imgix', // change to your preferred loader
-        path: isProd ? 'https://nvaneethm.github.io/react-portfolio/' : '',
+        loader: 'imgix', // or any other valid loader
+        path: isProd ? `https://nvaneethm.github.io/${repoName}/` : '',
     },
 
+    // Custom Webpack config
     webpack: (config, { isServer }) => {
         if (!isServer) {
-            // Fixes npm packages that depend on `fs` module
             config.resolve.fallback = { fs: false };
         }
-
-        // Further custom webpack configuration can be defined here
-
         return config;
     },
-};
 
+    // Export Path Map
+    exportPathMap: async function (
+        defaultPathMap,
+        { dev, dir, outDir, distDir, buildId }
+    ) {
+        return {
+            '/': { page: '/' },
+            '/about': { page: '/about' },
+            '/articles': { page: '/articles' },
+            '/contact': { page: '/contact' },
+            '/projects': { page: '/projects' },
+            // Add more paths here
+        };
+    },
+};
