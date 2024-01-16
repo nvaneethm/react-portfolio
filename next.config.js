@@ -7,7 +7,7 @@ const repoName = 'react-portfolio'; // Replace with your actual repo name if dif
 
 module.exports = {
     // Asset Prefix
-    assetPrefix: isProd ? `./` : '',
+    assetPrefix: isProd ? `/react-portfolio/` : '',
     output: 'export',
 
     // For routing with GitHub Pages
