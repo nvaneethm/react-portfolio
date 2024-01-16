@@ -11,7 +11,7 @@ module.exports = {
     output: 'export',
 
     // For routing with GitHub Pages
-    // basePath: isProd ? `/` : '',
+    basePath: isProd ? `/${repoName}` : '', //
     trailingSlash: true,
 
     // Next.js Image and CSS Configuration
