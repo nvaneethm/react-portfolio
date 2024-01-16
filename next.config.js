@@ -7,11 +7,11 @@ const repoName = 'react-portfolio'; // Replace with your actual repo name if dif
 
 module.exports = {
     // Asset Prefix
-    // assetPrefix: isProd ? `/${repoName}` : '',
+    assetPrefix: isProd ? `./` : '',
     output: 'export',
 
     // For routing with GitHub Pages
-    basePath: isProd ? `/${repoName}` : '',
+    // basePath: isProd ? `/` : '',
     trailingSlash: true,
 
     // Next.js Image and CSS Configuration
