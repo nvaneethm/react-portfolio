@@ -7,17 +7,17 @@ const repoName = 'react-portfolio'; // Replace with your actual repo name if dif
 
 module.exports = {
     // Asset Prefix
-    assetPrefix: isProd ? `/${repoName}/blob/gh-pages/` : '',
+    // assetPrefix: isProd ? `/${repoName}` : '',
     output: 'export',
 
     // For routing with GitHub Pages
-    basePath: isProd ? `/${repoName}/blob/gh-pages` : '',
+    basePath: isProd ? `/${repoName}` : '',
     trailingSlash: true,
 
     // Next.js Image and CSS Configuration
     images: {
         loader: 'imgix', // or any other valid loader
-        path: isProd ? `https://nvaneethm.github.io/${repoName}/blob/gh-pages/` : '',
+        path: isProd ? `https://nvaneethm.github.io/${repoName}/` : '',
     },
 
     // Custom Webpack config
