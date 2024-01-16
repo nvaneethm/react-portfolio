@@ -1,0 +1,20 @@
+
+/* styles/Layout.module.css */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    /* Styles for header */
+}
+
+.main {
+    flex: 1;
+    /* Styles for main content */
+}
+
+.footer {
+    /* Styles for footer */
+}
