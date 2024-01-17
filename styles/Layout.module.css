@@ -1,8 +1,28 @@
-
 /* styles/Layout.module.css */
 .layout {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    margin: 0 auto; /* Center the layout */
+    padding: 20px; /* Padding around the entire layout */
+    box-sizing: border-box; /* Include padding in width calculations */
 
+    /* Responsive margins */
+    @media (max-width: 768px) {
+        /* Smaller margin for mobile and small tablets */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        /* Medium margin for large tablets */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @media (min-width: 1025px) {
+        /* Larger margin for desktop */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
