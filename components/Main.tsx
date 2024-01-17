@@ -1,10 +1,14 @@
-// components/Footer.tsx
+// components/Main.tsx
 import styles from '../styles/Main.module.css';
 
-const Main = () => {
+type MainProps = {
+  children: React.ReactNode;
+};
+
+const Main = ({ children }: MainProps) => {
     return (
         <main className={styles.main}>
-        Main
+        {children}
       </main>
     );
 }
