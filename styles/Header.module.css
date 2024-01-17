@@ -1,8 +1,7 @@
 /* styles/Header.module.css */
 .header {
-    /* Styles for header */
-    background-color: #f5f5f5;
-    padding: 1rem;
-    text-align: center;
-    /* Other styles as needed */
+  padding: 4rem;
+  text-align: center;
+  border-radius: 30px; /* Rounded corners */
+  /* Other styles as needed */
 }

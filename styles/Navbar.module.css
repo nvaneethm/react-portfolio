@@ -1,25 +1,32 @@
 /* styles/Navbar.module.css */
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #333; */
+  padding: 10px;
+  border-radius: 30px;
+  min-width: 270px;
+  width: 30%;
+  margin: 0 auto;
+  box-shadow: 6px 7px 14px 6px rgba(12, 12, 12, 0.2);
 }
 
 .navlink {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
-/* Responsive design for smaller screens */
+/* Hide on mobile screens */
 @media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+  .navbar {
+    display: none;
+  }
+}
 
-    .navlink {
-        margin: 5px 0;
-    }
+/* Adjust for desktop screens */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
 }
