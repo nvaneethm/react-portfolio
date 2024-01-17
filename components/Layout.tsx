@@ -1,6 +1,9 @@
 // components/Layout.tsx
 import React from "react";
 import styles from "../styles/Layout.module.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,16 +12,9 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={styles.layout}>
-      <header className={styles.header}>
-        {/* Navigation Bar Here */}
-        <nav>Navbar Content</nav>
-      </header>
-      <main className={styles.main}>{children}</main>
-
-      <footer className={styles.footer}>
-        {/* Footer Content Here */}
-        Footer Content
-      </footer>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </div>
   );
 };
