@@ -2,8 +2,9 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  /* background-color: #333; */
-  padding: 10px;
+  position: fixed;
+  left: 32%;
+  padding: 14px;
   border-radius: 30px;
   min-width: 270px;
   width: 30%;

@@ -1,7 +1,6 @@
 /* styles/Header.module.css */
 .header {
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
-  border-radius: 30px; /* Rounded corners */
-  /* Other styles as needed */
+  border-radius: 30px; 
 }

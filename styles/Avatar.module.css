@@ -1,0 +1,15 @@
+/* styles/Avatar.module.css */
+.avatar {
+    background-color: orange;
+    color: white;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 10%;
+    font-size: 2rem; 
+    z-index: 10; 
+}
